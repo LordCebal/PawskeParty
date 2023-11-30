@@ -15,6 +15,7 @@ foreach html file in "pages" {
 
 const path = require('path');
 const fs = require('fs');
+const pageRoot = "../"
 
 const readHTMLFilesInSubdirectory = (subdirectory) => {
     const htmlFilesContent = {};
@@ -70,12 +71,7 @@ const buildTransformedPages = (pages, partials) => {
             outputPage = outputPage.replace(tag, partial, (error) => { console.log("writing failed, error:", error) });
         });
 
-
-        // fs.writeFile("/output/"+pageFileName,outputPage);
-        fs.writeFileSync("output/" + pageFileName, outputPage);
-
-        // transformedPages[pageKey] = outputPage;
-        // console.log(outputPage);
+        fs.writeFileSync(pageRoot + pageFileName, outputPage);
     }
 
     // return transformedPages;
@@ -88,10 +84,9 @@ const CopyFolderToOutput = (inputPath,OutputPath) => {
 
 const partials = readHTMLFilesInSubdirectory("./src/partials", ".html");
 const pages = readHTMLFilesInSubdirectory("./src/pages", ".html");
-createOuputDirectory();
+// createOuputDirectory(); //if other than ".."
 buildTransformedPages(pages, partials);
-CopyFolderToOutput("src/images", "output/images");
-CopyFolderToOutput("src/css", "output/css");
-CopyFolderToOutput("src/font", "output/font");
-// CopyFolderToOutput("src/landingPages", "output/landingPages");
-fs.copyFileSync("src/.htaccess","output/.htacess");
+CopyFolderToOutput("src/images", pageRoot+"images");
+CopyFolderToOutput("src/css", pageRoot+"css");
+CopyFolderToOutput("src/font", pageRoot+"font");
+fs.copyFileSync("src/.htaccess",pageRoot+".htacess");
