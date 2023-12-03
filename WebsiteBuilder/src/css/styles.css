@@ -252,10 +252,11 @@ footer > * {
 
 .h2 {
 	/* font-family: 'EasterTemporaryTest'; */
-	
+
 	font-family: 'louis_george_caferegularbold';
 	width: 100%;
 	
+	text-align: center;
 	color: var(--CHighlight1);
 	text-shadow: var(--CDetails) 1px 1px 0px, var(--CDetails) -1px -1px, var(--CDetails) -1px 1px, var(--CDetails) 1px -1px;
 	border: 2px solid var(--CHighlight2);
