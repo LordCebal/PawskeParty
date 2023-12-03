@@ -37,11 +37,12 @@ html {
 	--Cbg: rgb(0, 0, 0);
 	--CHover: rgb(239, 227, 227);
 
-	--CHighlight: rgb(100, 88, 85);
-	--CHighlight2: rgb(221, 190, 182);
+	--CHighlight1: rgb(222, 110, 110);
+	--CHighlight2: rgb(122, 17, 17);
+	--CDetails: rgb(122, 17, 17);
 
-	--Cp1: rgba(32, 2, 2, 0.7);
-	--Cp2: rgba(36, 7, 2, 0.7);
+	--Cp1: rgba(32, 2, 2, 0.78);
+	--Cp2: rgba(36, 7, 2, 0.78);
 
 	--Cs1: rgba(162, 43, 13, 20%);
 	--Cs2: rgb(61, 24, 24);
@@ -84,7 +85,7 @@ body {
 
 .imageGallery {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	gap: 0.4em;
 }
 
@@ -119,33 +120,32 @@ a {
 	font-family: 'louis_george_caferegularRegular';
 	font-size: 2em;
 	color: white;
-	border: solid var(--CHighlight) 2px;
+	border: solid var(--CDetails) 2px;
 	border-width: 1px 0px;
 	
 }
 
 .navbar {
-	border-radius: 0.7em;
-    padding: 0.7em;
+	border-radius: 14px;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px 2px;
-    /* background-color: rgba(255, 255, 255, 15%); */
-    font-size: 1.3em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0px 2px;
+	/* background-color: rgba(255, 255, 255, 15%); */
+	font-size: 1.3em;
 	justify-content: center;
 }
 .navbar a {
 	color: white;
 	/* border: 1px rgba(255, 255, 255, 25%) dashed; */
-	border: solid var(--CHighlight) 2px;
+	border: solid var(--CDetails) 2px;
 	border-width: 1px 0px;
 
 	flex-grow: 1;
 
-    text-align: center;
+	text-align: center;
 	
 	padding:0.3em;
 	border-radius: 1em;
@@ -252,10 +252,12 @@ footer > * {
 
 .h2 {
 	/* font-family: 'EasterTemporaryTest'; */
+	
 	font-family: 'louis_george_caferegularbold';
 	width: 100%;
-
-	color: var(--CHighlight);
+	
+	color: var(--CHighlight1);
+	text-shadow: var(--CDetails) 1px 1px 0px, var(--CDetails) -1px -1px, var(--CDetails) -1px 1px, var(--CDetails) 1px -1px;
 	border: 2px solid var(--CHighlight2);
 	border-width: 0 0 1px 0;
 
@@ -266,6 +268,12 @@ footer > * {
 	font-weight: 700;
 }
 
+.h3 {
+	margin-block-start: 1em;
+	margin-block-end: 0.3em;
+	font-size: 1.15em;
+	font-weight: 700;
+}
 
 /* general components */
 button {
@@ -276,7 +284,7 @@ button {
 	max-width: 10em;
 
 	background-color: var(--Cs1);
-	color: var(--CHighlight);
+	color: var(--CHighlight1);
 
 	border: none;
 
@@ -358,10 +366,16 @@ tr {
 	line-height: 1.1em;
 	display: flex;
 	flex-direction: column;
+	gap: 0.5em;
 }
 
 .videoFrame {
 	height: 30em;
+	border-width: 0px;
+}
+
+.textblock{
+
 }
 
 .centerText {
@@ -377,7 +391,7 @@ tr {
 }
 
 .smallerText {
-    font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 .smallsubtitle {
@@ -399,9 +413,9 @@ tr {
 
 a.barqLogo {
 	color: white;
-    text-shadow: 1px 1px 1px black;
-    font-size: 1.2em;
-    font-weight: bolder;
+	text-shadow: 1px 1px 1px black;
+	font-size: 1.2em;
+	font-weight: bolder;
 }
 
 ul {
