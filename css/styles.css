@@ -218,7 +218,7 @@ footer > * {
 	/* box-shadow: 4px 4px 4px var(--Cs1); */
 
 	border-radius: 0.7em;
-	padding: 0.4em;
+	padding: 0.4em 1.1em;
 	margin-top: 0.4em;
 
 	display: flex;
@@ -361,7 +361,7 @@ tr {
 
 .bread {
 	width: 100%;
-	padding: 0px 1em;
+	padding: 0px 0.3em;
 	line-height: 1.2em;
 	display: flex;
 	flex-direction: column;
