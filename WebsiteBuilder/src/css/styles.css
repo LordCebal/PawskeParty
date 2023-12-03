@@ -20,21 +20,8 @@
 
 html {
 
-	/* Blue blue v1 */
-	/* --Cbg: rgb(0, 0, 0);
-	--CHover: rgb(209, 209, 233);
-
-	--CHighlight: rgb(0, 4, 112);
-	--CHighlight2:rgb(13, 20, 162);
-
-	--Cp1: rgba(255, 255, 255, 0.85);
-	--Cp2: rgba(217, 217, 217, 0.85);
-
-	--Cs1: rgba(38, 13, 162, 0.2);
-	--Cs2: rgb(27, 24, 61); */
-
 	/* style red */
-	--Cbg: rgb(0, 0, 0);
+	/* --Cbg: rgb(0, 0, 0);
 	--CHover: rgb(239, 227, 227);
 
 	--CHighlight: rgb(112, 22, 0);
@@ -44,18 +31,33 @@ html {
 	--Cp2: rgb(236, 235, 235);
 
 	--Cs1: rgba(162, 43, 13, 20%);
+	--Cs2: rgb(61, 24, 24); */
+
+	/* style dark red */
+	--Cbg: rgb(0, 0, 0);
+	--CHover: rgb(239, 227, 227);
+
+	--CHighlight: rgb(100, 88, 85);
+	--CHighlight2: rgb(221, 190, 182);
+
+	--Cp1: rgba(32, 2, 2, 0.7);
+	--Cp2: rgba(36, 7, 2, 0.7);
+
+	--Cs1: rgba(162, 43, 13, 20%);
 	--Cs2: rgb(61, 24, 24);
+
+	color: white; /*black*/
+
 
 	margin: 0;
 
 	font-family: 'louis_george_caferegularRegular';
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 body {
 
 	margin: auto;
-	color: black;
 
 	background: var(--Cbg);
 	background-image: url("../images/backgroundpic.svg");
@@ -130,7 +132,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0px 1em;
+    gap: 0px 2px;
     /* background-color: rgba(255, 255, 255, 15%); */
     font-size: 1.3em;
 	justify-content: center;
@@ -140,6 +142,8 @@ a {
 	/* border: 1px rgba(255, 255, 255, 25%) dashed; */
 	border: solid var(--CHighlight) 2px;
 	border-width: 1px 0px;
+
+	flex-grow: 1;
 
     text-align: center;
 	
@@ -211,7 +215,7 @@ footer > * {
 .paragraph {
 	background-color: var(--Cp1);
 	transition: background 0.2s ease-in-out;
-	box-shadow: 4px 4px 4px var(--Cs1);
+	/* box-shadow: 4px 4px 4px var(--Cs1); */
 
 	border-radius: 0.7em;
 	padding: 0.4em;
@@ -245,9 +249,6 @@ footer > * {
 	background-color: var(--Cp2);
 }
 
-.paragraph:hover {
-	background-color: var(--CHover);
-}
 
 .h2 {
 	/* font-family: 'EasterTemporaryTest'; */
@@ -355,6 +356,12 @@ tr {
 	width: 100%;
 	padding: 0px 0.3em;
 	line-height: 1.1em;
+	display: flex;
+	flex-direction: column;
+}
+
+.videoFrame {
+	height: 30em;
 }
 
 .centerText {
