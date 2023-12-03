@@ -256,15 +256,13 @@ footer > * {
 	font-family: 'louis_george_caferegularbold';
 	width: 100%;
 	
-	text-align: center;
+	/* text-align: center; */
 	color: var(--CHighlight1);
 	text-shadow: var(--CDetails) 1px 1px 0px, var(--CDetails) -1px -1px, var(--CDetails) -1px 1px, var(--CDetails) 1px -1px;
-	border: 2px solid var(--CHighlight2);
-	border-width: 0 0 1px 0;
 
 	align-self: center;
 	font-size: 2em;
-	margin: 0.3em 0px;
+    margin: 5px 0.6em;
 
 	font-weight: 700;
 }
@@ -363,11 +361,11 @@ tr {
 
 .bread {
 	width: 100%;
-	padding: 0px 0.3em;
-	line-height: 1.1em;
+	padding: 0px 1em;
+	line-height: 1.2em;
 	display: flex;
 	flex-direction: column;
-	gap: 0.5em;
+	gap: 0.7em;
 }
 
 .videoFrame {
