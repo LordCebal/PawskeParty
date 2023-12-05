@@ -136,13 +136,12 @@ a {
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 0px 2px;
-	/* background-color: rgba(255, 255, 255, 15%); */
 	font-size: 1.3em;
 	justify-content: center;
 }
+
 .navbar a {
 	color: white;
-	/* border: 1px rgba(255, 255, 255, 25%) dashed; */
 	border: solid var(--CDetails) 2px;
 	border-width: 1px 0px;
 
@@ -219,7 +218,6 @@ footer > * {
 .paragraph {
 	background-color: var(--Cp1);
 	transition: background 0.2s ease-in-out;
-	/* box-shadow: 4px 4px 4px var(--Cs1); */
 
 	border-radius: 0.7em;
 	padding: 0.4em 1.1em;
@@ -243,8 +241,6 @@ footer > * {
 
 
 .paragraph>* {
-	/* midlertidig: border: 1px solid black; */
-	/* width: 20em; */
 	min-width: 7em;
 	flex-grow: 1;
 }
@@ -255,24 +251,9 @@ footer > * {
 
 
 .h2 {
-	/* font-family: 'EasterTemporaryTest'; */
-
-	font-family: 'EasterFont';
-	width: 100%;
-	
-	/* text-align: center; */
-	color: var(--Contrast1);
-	text-shadow: 
-	var(--CHighlight1) 1px 1px 1px, 
-	var(--CHighlight1) -1px -1px 1px, 
-	var(--CHighlight1) -1px 1px 1px, 
-	var(--CHighlight1) 1px -1px 1px;
-
-	align-self: center;
-	font-size: 2em;
-    /* margin: 0em 0em 0.5em 0em; */
-
-	font-weight: 700;
+    font-family: louis_george_caferegularbold;
+    font-size: 2em;
+    color: white;
 }
 
 .h3 {
@@ -282,7 +263,6 @@ footer > * {
 	font-weight: 700;
 }
 
-/* general components */
 button {
 	font-size: 1.4em;
 
@@ -329,7 +309,6 @@ tr {
 	background-position: center;
 
 	
-	/* border: 1px solid var(--CHighlight); */
 	height: 24em;
 }
 
