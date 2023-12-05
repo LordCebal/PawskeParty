@@ -37,9 +37,11 @@ html {
 	--Cbg: rgb(0, 0, 0);
 	--CHover: rgb(239, 227, 227);
 
-	--CHighlight1: rgb(222, 110, 110);
+	--CHighlight1: rgb(218, 72, 72);
 	--CHighlight2: rgb(122, 17, 17);
 	--CDetails: rgb(122, 17, 17);
+
+	--Contrast1: rgb(255 185 111);
 
 	--Cp1: rgba(32, 2, 2, 0.78);
 	--Cp2: rgba(36, 7, 2, 0.78);
@@ -90,7 +92,7 @@ body {
 }
 
 a {
-	color: var(--CHighlight2);
+	color: var(--Contrast1);
 }
 
 .intro {
@@ -257,8 +259,12 @@ footer > * {
 	width: 100%;
 	
 	/* text-align: center; */
-	color: var(--CHighlight1);
-	text-shadow: var(--CDetails) 1px 1px 0px, var(--CDetails) -1px -1px, var(--CDetails) -1px 1px, var(--CDetails) 1px -1px;
+	color: var(--Contrast1);
+	text-shadow: 
+	var(--CHighlight1) 1px 1px 1px, 
+	var(--CHighlight1) -1px -1px 1px, 
+	var(--CHighlight1) -1px 1px 1px, 
+	var(--CHighlight1) 1px -1px 1px;
 
 	align-self: center;
 	font-size: 2em;
@@ -277,7 +283,6 @@ footer > * {
 /* general components */
 button {
 	font-size: 1.4em;
-	/* text-shadow: 3px 3px 3px rgb(0 0 0 / 30%); */
 
 	flex-grow: 2;
 	max-width: 10em;
