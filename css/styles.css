@@ -13,10 +13,11 @@
 	src: url('../font/LouisGeorgeCafeBold.ttf');
 }
 
-/* @font-face {
-	font-family: 'EasterTemporaryTest';
+
+@font-face {
+	font-family: 'EasterFont';
 	src: url('Font/Sunday\ Best\ ttf.ttf');
-} */
+}
 
 html {
 
@@ -149,6 +150,7 @@ a {
 
 	text-align: center;
 	
+	margin: 1px 0;
 	padding:0.3em;
 	border-radius: 1em;
 }
@@ -255,7 +257,7 @@ footer > * {
 .h2 {
 	/* font-family: 'EasterTemporaryTest'; */
 
-	font-family: 'louis_george_caferegularbold';
+	font-family: 'EasterFont';
 	width: 100%;
 	
 	/* text-align: center; */
