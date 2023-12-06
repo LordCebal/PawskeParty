@@ -165,6 +165,18 @@ a {
 	background-color: rgba(0, 0, 0, 35%);
 }
 
+.willowImageBlock {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.willowImageBlock img {
+	position: absolute;
+	z-index: -1;
+}
+
+
+
 .main {
 	display: flex;
 	flex-flow: column;
