@@ -13,28 +13,16 @@
 	src: url('../font/LouisGeorgeCafeBold.ttf');
 }
 
-/* @font-face {
-	font-family: 'EasterTemporaryTest';
+
+@font-face {
+	font-family: 'EasterFont';
 	src: url('Font/Sunday\ Best\ ttf.ttf');
-} */
+}
 
 html {
 
-	/* Blue blue v1 */
-	/* --Cbg: rgb(0, 0, 0);
-	--CHover: rgb(209, 209, 233);
-
-	--CHighlight: rgb(0, 4, 112);
-	--CHighlight2:rgb(13, 20, 162);
-
-	--Cp1: rgba(255, 255, 255, 0.85);
-	--Cp2: rgba(217, 217, 217, 0.85);
-
-	--Cs1: rgba(38, 13, 162, 0.2);
-	--Cs2: rgb(27, 24, 61); */
-
 	/* style red */
-	--Cbg: rgb(0, 0, 0);
+	/* --Cbg: rgb(0, 0, 0);
 	--CHover: rgb(239, 227, 227);
 
 	--CHighlight: rgb(112, 22, 0);
@@ -44,18 +32,36 @@ html {
 	--Cp2: rgb(236, 235, 235);
 
 	--Cs1: rgba(162, 43, 13, 20%);
+	--Cs2: rgb(61, 24, 24); */
+
+	/* style dark red */
+	--Cbg: rgb(0, 0, 0);
+	--CHover: rgb(239, 227, 227);
+
+	--CHighlight1: rgb(218, 72, 72);
+	--CHighlight2: rgb(122, 17, 17);
+	--CDetails: rgb(122, 17, 17);
+
+	--Contrast1: rgb(255 185 111);
+
+	--Cp1: rgba(32, 2, 2, 0.78);
+	--Cp2: rgba(36, 7, 2, 0.78);
+
+	--Cs1: rgba(162, 43, 13, 20%);
 	--Cs2: rgb(61, 24, 24);
+
+	color: white; /*black*/
+
 
 	margin: 0;
 
 	font-family: 'louis_george_caferegularRegular';
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 body {
 
 	margin: auto;
-	color: black;
 
 	background: var(--Cbg);
 	background-image: url("../images/backgroundpic.svg");
@@ -78,16 +84,19 @@ body {
 #content {
 	padding: 0 0.5em;
 	max-width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8em;
 }
 
 .imageGallery {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	gap: 0.4em;
 }
 
 a {
-	color: var(--CHighlight2);
+	color: var(--Contrast1);
 }
 
 .intro {
@@ -117,32 +126,33 @@ a {
 	font-family: 'louis_george_caferegularRegular';
 	font-size: 2em;
 	color: white;
-	border: solid var(--CHighlight) 2px;
+	border: solid var(--CDetails) 2px;
 	border-width: 1px 0px;
 	
 }
 
 .navbar {
-	border-radius: 0.7em;
-    padding: 0.7em;
+	border-radius: 14px;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px 1em;
-    /* background-color: rgba(255, 255, 255, 15%); */
-    font-size: 1.3em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5em 2px;
+	font-size: 1.3em;
 	justify-content: center;
 }
+
 .navbar a {
 	color: white;
-	/* border: 1px rgba(255, 255, 255, 25%) dashed; */
-	border: solid var(--CHighlight) 2px;
+	border: solid var(--CDetails) 2px;
 	border-width: 1px 0px;
 
-    text-align: center;
+	flex-grow: 1;
+
+	text-align: center;
 	
+	margin: 1px 0;
 	padding:0.3em;
 	border-radius: 1em;
 }
@@ -211,10 +221,9 @@ footer > * {
 .paragraph {
 	background-color: var(--Cp1);
 	transition: background 0.2s ease-in-out;
-	box-shadow: 4px 4px 4px var(--Cs1);
 
 	border-radius: 0.7em;
-	padding: 0.4em;
+	padding: 0.4em 1.1em;
 	margin-top: 0.4em;
 
 	display: flex;
@@ -235,8 +244,6 @@ footer > * {
 
 
 .paragraph>* {
-	/* midlertidig: border: 1px solid black; */
-	/* width: 20em; */
 	min-width: 7em;
 	flex-grow: 1;
 }
@@ -245,37 +252,29 @@ footer > * {
 	background-color: var(--Cp2);
 }
 
-.paragraph:hover {
-	background-color: var(--CHover);
-}
 
 .h2 {
-	/* font-family: 'EasterTemporaryTest'; */
-	font-family: 'louis_george_caferegularbold';
-	width: 100%;
+    font-family: louis_george_caferegularbold;
+    font-size: 2em;
+    color: white;
+	margin: 0 0 0.5em 0;
+}
 
-	color: var(--CHighlight);
-	border: 2px solid var(--CHighlight2);
-	border-width: 0 0 1px 0;
-
-	align-self: center;
-	font-size: 2em;
-	margin: 0.3em 0px;
-
+.h3 {
+	margin-block-start: 1em;
+	margin-block-end: 0.3em;
+	font-size: 1.15em;
 	font-weight: 700;
 }
 
-
-/* general components */
 button {
 	font-size: 1.4em;
-	/* text-shadow: 3px 3px 3px rgb(0 0 0 / 30%); */
 
 	flex-grow: 2;
 	max-width: 10em;
 
 	background-color: var(--Cs1);
-	color: var(--CHighlight);
+	color: var(--CHighlight1);
 
 	border: none;
 
@@ -314,7 +313,6 @@ tr {
 	background-position: center;
 
 	
-	/* border: 1px solid var(--CHighlight); */
 	height: 24em;
 }
 
@@ -354,8 +352,20 @@ tr {
 .bread {
 	width: 100%;
 	padding: 0px 0.3em;
-	line-height: 1.1em;
+	line-height: 1.2em;
+	display: flex;
+	flex-direction: column;
+	gap: 0.7em;
 }
+
+.videoFrame {
+	height: 30em;
+	border-width: 0px;
+}
+
+/* .textblock{
+
+} */
 
 .centerText {
 	text-align: center;
@@ -370,7 +380,7 @@ tr {
 }
 
 .smallerText {
-    font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 .smallsubtitle {
@@ -392,9 +402,9 @@ tr {
 
 a.barqLogo {
 	color: white;
-    text-shadow: 1px 1px 1px black;
-    font-size: 1.2em;
-    font-weight: bolder;
+	text-shadow: 1px 1px 1px black;
+	font-size: 1.2em;
+	font-weight: bolder;
 }
 
 ul {
