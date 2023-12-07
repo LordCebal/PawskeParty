@@ -206,32 +206,35 @@ a {
 	margin: auto;
 }
 
-.footer {
+footer {
 	font-size: 0.8em;
 
 	
-	background-color: var(--Cs2);
-	box-shadow: 0 50vh 0 50vh var(--Cs2);
+	background-color: var(--Cp1);
 	color: white;
 	font-family: 'louis_george_caferegularLight';
-
+	
 
 	width: 96%;
 	padding: 2%;
-
+	
 	display: flex;
 	flex-flow: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	gap: 1em;
+
+	/* box-shadow: 0 50vh 0 50vh var(--Cs2); */
+	border-radius: 0.7em 0.7em 0 0;
+
 }
 
 footer > * {
 	min-width: 10em;
 }
 
-.footer a {
-	color: rgb(165, 255, 255);
+footer a {
+	color: var(--Contrast1);
 }
 
 .paragraph {
