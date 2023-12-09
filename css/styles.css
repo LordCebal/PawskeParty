@@ -16,25 +16,10 @@
 
 @font-face {
 	font-family: 'EasterFont';
-	src: url('Font/Sunday\ Best\ ttf.ttf');
+	src: url('../font/SundayBest.ttf');
 }
 
 html {
-
-	/* style red */
-	/* --Cbg: rgb(0, 0, 0);
-	--CHover: rgb(239, 227, 227);
-
-	--CHighlight: rgb(112, 22, 0);
-	--CHighlight2: rgb(162, 43, 13);
-
-	--Cp1: rgba(255, 255, 255, 100%);
-	--Cp2: rgb(236, 235, 235);
-
-	--Cs1: rgba(162, 43, 13, 20%);
-	--Cs2: rgb(61, 24, 24); */
-
-	/* style dark red */
 	--Cbg: rgb(0, 0, 0);
 	--CHover: rgb(239, 227, 227);
 
@@ -51,7 +36,6 @@ html {
 	--Cs2: rgb(61, 24, 24);
 
 	color: white; /*black*/
-
 
 	margin: 0;
 
@@ -123,8 +107,8 @@ a {
 
 .subtitle {
 	text-align: center;
-	font-family: 'louis_george_caferegularRegular';
-	font-size: 2em;
+	font-family: 'EasterFont';
+	font-size: 1.3em;
 	color: white;
 	border: solid var(--CDetails) 2px;
 	border-width: 1px 0px;
@@ -273,7 +257,7 @@ footer a {
 
 
 .h2 {
-    font-family: louis_george_caferegularbold;
+    font-family: 'louis_george_caferegularbold';
     font-size: 2em;
     color: white;
 	margin: 0 0 0.5em 0;
