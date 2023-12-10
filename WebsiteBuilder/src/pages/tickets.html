@@ -43,4 +43,97 @@
 
 </script>
 
+<style>
+	/* Makes body transparent */
+
+	#checkin_registration .registration--body,
+	#checkin_registration .registration--start>.ticket>div,
+	#checkin_registration .registration--start>.ticket>div:last-child,
+	#checkin_registration {
+		background-color: transparent !important;
+	}
+
+	/* Generelle tekster og titler */
+
+	#checkin_registration p, h1, h2, h3, h4, div {
+		color: white !important;
+		font-family: '<font-name>' !important;
+		font-size: 18px;
+	}
+
+	/* Next button color*/
+	#checkin_registration button.btn-success {
+		color: #000 !important;
+		background: #000 !important;
+	}
+
+	/* Option button color */
+	#checkin_registration button.btn--active {
+		color: #000 !important;
+		background: #000 !important;
+	}
+
+	/* Modus “Bestill billetter”, “Bestill uspesifisert billetter” */
+	button[name=“activeMode”] {
+		color: #000 !important;
+		background: #000 !important;
+	}
+
+	/* Plus button */
+	#checkin_registration .ticket--amount--button.plus {
+		color: #000 !important;
+		background: #000 !important;
+	}
+
+	/* Minus button */
+	#checkin_registration .ticket--amount--button.minus {
+		color: #000 !important;
+		background: #000 !important;
+	}
+
+	/*Antall billetter*/
+	#checkin_registration .ticket-number-input,
+	.checkin_registration .ticket-number-input {
+		background-color: black !important;
+		color: white !important;
+	}
+	/*Endre "Velg biletter" */
+	#choose-tickets span {
+		display: none;
+	}
+	#choose-tickets:after {
+		content: "Velg billetter"
+	}
+
+	/*Bestillingskontakt*/
+	#ticket-buyer span {
+		display: none;
+	}
+	#ticket-buyer:after {
+		content: "Bestillingskontakt"
+	}
+
+	/*Deltagerinformasjon*/
+	#attendee-information span {
+		display: none;
+	}
+	#attendee-information:after {
+		content: "Deltakerinformasjon"
+	}
+
+	/* Tillegsvalg for biletten*/
+	#ticket-additionals span {
+		display: none;
+	}
+	#ticket-additionals:after {
+		content: «Tilleggsvalg for billetten"
+	}
+
+	/*bredden på teksten */
+	#checkin_registration .registration--start>.ticket,
+	.checkin_registration .registration--start>.ticket {
+		flex-wrap: wrap;
+	}
+</style>
+
 </html>
