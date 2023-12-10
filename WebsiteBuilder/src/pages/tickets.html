@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+{{-partial "head.html"-}}
+
+<body>
+	<div class="app">
+		{{-partial "header.html"-}}
+		{{-partial "navbar.html"-}}
+		<div id="content">
+			<div class="paragraph">
+
+				<div class="h2">
+					Placeholder title
+				</div>
+
+				<div class="bread">
+					<div class="textblock">
+						Placeholder text
+					</div>
+
+				</div>
+			</div>
+
+			<div class="paragraph">
+				<div id="checkin_registration" />
+			</div>
+
+		</div>
+		{{-partial "footer.html"-}}
+	</div>
+</body>
+
+<script>
+	(function (w, d) {
+		d.event_id = 61094;
+		var headTag = d.getElementsByTagName('head')[0];
+		var script = d.createElement('script');
+		script.src = 'https://registration.checkin.no/registration.loader.js';
+		script.async = 1;
+		script.crossOrigin = 1;
+		headTag.appendChild(script);
+	})(window, document);
+
+</script>
+
+</html>
