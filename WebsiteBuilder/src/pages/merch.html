@@ -42,7 +42,7 @@
 							<img class="merchImg" src="../images/Merch/merchBandana.jpg" alt="">
 						</div>
 						<div class="merchRow">
-							<<img class="merchImg" src="../images/Merch/merchWaterbottle.jpg" alt="">
+							<img class="merchImg" src="../images/Merch/merchWaterbottle.jpg" alt="">
 								<div class="merchInfo">
 									<div class="h3">Waterbottle</div>
 									<div>300 NOK</div>
@@ -68,13 +68,7 @@
 
 <style>
 	#content {
-		min-width: 800px;
-	}
-
-	@media only screen and (max-width: 1000px) {
-		#content {
-			min-width: 700px;
-		}
+		min-width: 700px;
 	}
 
 	@media only screen and (max-width: 850px) {
@@ -109,6 +103,12 @@
 		border-radius: 20px;
 		min-height: 150px;
 		max-height: 250px;
+	}
+
+	@media only screen and (max-width: 550px) {
+		.merchImg {
+			max-height: 150px;
+		}
 	}
 
 	.merchInfo {
