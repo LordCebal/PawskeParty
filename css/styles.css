@@ -393,6 +393,10 @@ tr {
   font-size: 0.8em;
 }
 
+.smallestText {
+  font-size: 0.5em;
+}
+
 .smallsubtitle {
   margin-top: 0.3em;
   font-size: 1.4em;
