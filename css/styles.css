@@ -135,26 +135,6 @@ a {
   border-radius: 1em;
 }
 
-.glow {
-	box-shadow: 1px 1px 11px 5px rgba(121, 192, 255, 0.7);
-  animation: shadows 3s infinite;
-}
-
-@keyframes shadows {
-  0% {
-    box-shadow: 1px 1px 11px 5px rgba(121, 192, 255, 0.8);
-  }
-  50% {
-    box-shadow: 1px 1px 11px 5px rgba(255, 255, 255, 0.8);
-  }
-  75% {
-    box-shadow: 1px 1px 11px 5px rgba(255, 59, 59, 0.8);
-  }
-  100% {
-    box-shadow: 1px 1px 11px 5px rgba(121, 192, 255, 0.8);
-  }
-}
-
 .noDecoration {
   text-decoration: none;
 }
@@ -435,4 +415,50 @@ li {
   min-width: 3em;
   padding: 0 0 0 1em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*Programme*/
+
+/* .progFlexBox {
+  display: flex;
+  flex-direction: column;
+}
+.progRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+} */
+
+.progTable {
+  max-width: 400px;
+}
+
+.progTable > tbody > tr > td:nth-child(1) {
+  text-align: center;
+  max-width: 0px;
+}
+
+.active {
+	box-shadow: 0px 0px 2px 2px rgba(121, 192, 255, 0.7);
+  animation: shadows 3s infinite;
+}
+
+@keyframes shadows {
+  0% {
+    box-shadow: 0px 0px 2px 2px rgba(121, 192, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.8);
+  }
+  75% {
+    box-shadow: 0px 0px 2px 2px rgba(255, 59, 59, 0.8);
+  }
+  100% {
+    box-shadow: 0px 0px 2px 2px rgba(121, 192, 255, 0.8);
+  }
+}
+
+.mx100 {
+  max-width: 100%;
 }

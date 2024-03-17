@@ -33,13 +33,29 @@
 </div>
 		<nav class="navbar">
     <a class="noDecoration blackTint" href="./index">Main Page</a>
-    <a class="noDecoration blackTint glow" href="./tickets">Tickets</a>
+    <a class="noDecoration blackTint" href="./tickets">Tickets</a>
     <a class="noDecoration blackTint" href="./practical">Practical Info</a>
     <a class="noDecoration blackTint" href="./events">Events</a>
     <a class="noDecoration blackTint" href="./applications">Applications</a>
     <a class="noDecoration blackTint" href="./gallery">Gallery</a>
     <a class="noDecoration blackTint" href="./tosncoc">TOS & COC</a>
 </nav>
+
+<script>
+    const currentPath = "."+window.location.pathname;
+    const navItems = document.querySelectorAll('.navbar a');
+    console.log(":::"+currentPath)
+
+    navItems.forEach(item => {
+        const href = item.getAttribute('href');
+        console.log(":::2"+href)
+        
+        if (href === currentPath) {
+            item.classList.add('active');
+            console.log(href);
+        }
+    });
+</script>
 		<div id="content">
 			<div class="paragraph">
 
