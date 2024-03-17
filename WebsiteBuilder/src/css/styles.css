@@ -439,12 +439,13 @@ li {
   max-width: 0px;
 }
 
-.active {
-	box-shadow: 0px 0px 2px 2px rgba(121, 192, 255, 0.7);
-  animation: shadows 3s infinite;
+a.active {
+	background-color: white;
+  color: var(--CDetails);
+  /* animation: shadows 3s infinite; */
 }
 
-@keyframes shadows {
+/* @keyframes shadows {
   0% {
     box-shadow: 0px 0px 2px 2px rgba(121, 192, 255, 0.8);
   }
@@ -457,7 +458,7 @@ li {
   100% {
     box-shadow: 0px 0px 2px 2px rgba(121, 192, 255, 0.8);
   }
-}
+} */
 
 .mx100 {
   max-width: 100%;
