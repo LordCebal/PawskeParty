@@ -435,13 +435,12 @@ li {
   flex-direction: row;
 } */
 
-.progTable {
-  max-width: 400px;
-}
-
 .progTable > tbody > tr > td:nth-child(1) {
   text-align: center;
-  max-width: 0px;
+}
+
+.progNewDay {
+  padding-top: 2em;
 }
 
 .mx100 {
