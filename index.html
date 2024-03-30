@@ -14,10 +14,9 @@
 	<title>🐾 PawskeParty 🐇</title>
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
-	<div class="app">
-		
+    <div class="app">
+        
 <div class="intro">
     <a class="noDecoration" href="./">
         <div class="logo">
@@ -31,88 +30,47 @@
         </div>
     </a>
 </div>
-		<nav class="navbar">
-    <a class="noDecoration blackTint" href="./index">Main Page</a>
-    <a class="noDecoration blackTint" href="./tickets">Tickets</a>
-    <a class="noDecoration blackTint" href="./practical">Practical Info</a>
-    <a class="noDecoration blackTint" href="./events">Events</a>
-    <a class="noDecoration blackTint" href="./applications">Applications</a>
-    <a class="noDecoration blackTint" href="./gallery">Gallery</a>
-    <a class="noDecoration blackTint" href="./tosncoc">TOS & COC</a>
-</nav>
+        <div id="content">
+            <div class="paragraph">
 
-<script>
-    const highlightActiveNavbarItem = () => {
-        const currentPath = "." + window.location.pathname;
-        const navItems = document.querySelectorAll('.navbar a');
-        console.log(":::" + currentPath)
+                <div class="h2">
+                    Thanks for a wonderful PawskeParty in 2024!
+                </div>
 
-        navItems.forEach(item => {
-            const href = item.getAttribute('href');
-            if (href === currentPath) {
-                item.classList.add('active');
-            }
-        });
-    }
+                <div class="bread">
+                    <div class="textblock">
+                        We're looking forward to seeing you again next year around easter!.
+                    </div>
 
-    highlightActiveNavbarItem();
-</script>
-		<div id="content">
-			<div class="paragraph">
+                    <div class="socialElement">
+                        Stay up to date all the time through our social media -
+                        <a href="https://linktr.ee/pawskeparty">
+                            click here<br>
+                        </a>
+                    </div>
+                </div>                
+            </div>
 
-				<div class="h2">
-					Pawske Party is back!
-				</div>
-
-				<div class="bread">
-					<div class="textblock">
-						After a very successful first year we are super excited to invite you back for the second edition of our furdance. There will once again be DJ’s, various events, and lots of fun. Tickets go on sale Friday January 12th at 17:00.
-					</div>
-
-					<div class="textblock">
-						Pawske Party takes place at Melahuset, Oslo, Norway, on Friday March 29th, Easter Thursday. Additionally to the party itself we have events taking place the day before and the day after as well, for the early arrival and late departure crowd. See the events page for more info.
-					</div>
-
-					<div class="textblock">
-						Need a place to stay? Our partner hotel Comfort Hotel Xpress Youngstorget offers a 12% discount on the nights from March 28th to March 30th.
-					</div>
-
-					<div class="textblock">
-						The practical info page gives you quick and easy access to all important information.
-					</div>
-
-					<div class="textblock">
-						Wanna help make the party be the best it can be? Check out the applications page to apply as a DJ, a dealer for the Dealers Den, staff openings and more.
-					</div>
-
-					<div class="textblock">Got any questions? Reach out to us in our Telegram chat, or email us at <a
-							href="mailto:pawskeparty@gmail.com">pawskeparty@gmail.com</a></div>
+            <div class="paragraph">
+                <div class="h2">
+                    Check out last years highlights:
+                </div>
 
 
-					<div class="socialElement">
-						<a href="https://linktr.ee/pawskeparty">
-						You can find all our social media here
-						</a>
-					</div>
-				</div>
-			</div>
+                <div class="smallText">
+                    Photos by Emphy
+                </div>
+                
+                <div class="imageGallery">
+                    <img src="./images/Photos/temp1Bowling.jpg" alt="">
+                    <img src="./images/Photos/temp3DD.jpg" alt="">
+                    <img src="./images/Photos/temp10Panel.jpg" alt="">
+                    <img src="./images/Photos/Temp8Dance.jpg" alt="">
+                </div>
+            </div>
 
-			<div class="paragraph">
-				<div class="h3">
-					Check out last years group photo:
-				</div>
-				
-				<a href="./images/Photos/groupPic.jpg" target="_blank" rel="noopener noreferrer">
-					<div class="imageGallery">
-						<img src="./images/Photos/groupPic.jpg" alt="">
-					</div>
-				</a>
-				<div class="smallText">
-					Photos by Emphy
-				</div>
-			</div>
-		</div>
-		<footer>
+        </div>
+        <footer>
     <div class="about">
         Pawske party © 2023-2024 <br>
         orgnr: 930 235 490
@@ -134,7 +92,6 @@
         </div>
     </div>
 </footer>
-	</div>
+    </div>
 </body>
-
 </html>
