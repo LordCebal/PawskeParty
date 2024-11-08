@@ -28,11 +28,11 @@ html {
 
   --Contrast1: rgb(255 185 111);
 
-  --Cp1: rgba(32, 2, 2, 0.78);
-  --Cp2: rgba(36, 7, 2, 0.78);
+  --Cp1: rgb(70, 2, 2);
+  --Cp2: rgba(54, 9, 29, 1);
 
   --Cs1: rgba(162, 43, 13, 20%);
-  --Cs2: rgb(61, 24, 24);
+  --Cs2: rgb(100, 45, 45);
 
   color: white; /*black*/
 
@@ -46,9 +46,12 @@ body {
   margin: auto;
 
   background: var(--Cbg);
-  background-image: url("../images/backgroundpic.svg");
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ),url("../images/backgroundpic2.png");
   background-position: top;
-
+  
   max-width: 45em;
 }
 
