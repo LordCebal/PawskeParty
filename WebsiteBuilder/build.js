@@ -47,6 +47,8 @@ const tagToFileName = (tag) => {
 }
 
 const buildTransformedPages = (pages, partials) => {
+    console.log("Starting build!");
+
     var transformedPages = {};
 
     var pageFileNames = Object.keys(pages);
@@ -73,6 +75,8 @@ const buildTransformedPages = (pages, partials) => {
 
         fs.writeFileSync(pageRoot + pageFileName, outputPage);
     }
+
+    console.log("Build is done!");
 
     // return transformedPages;
 }

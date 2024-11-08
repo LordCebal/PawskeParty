@@ -1,35 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="0">
-
-	<link rel="icon" href="./images/logofill.png">
-
-	<title>🐾 PawskeParty 🐇</title>
-	<link rel="stylesheet" href="./css/styles.css">
-</head>
+{{-partial "head.html"-}}
 
 <body>
 	<div class="app">
-		<div class="intro">
-    <a class="noDecoration" href="./">
-        <div class="logo">
-        </div>
-
-        <div class="subtitle blackTint">
-            The Oslo-based furry dance party
-        </div>
-        <div class="subtitle smallsubtitle blackTint">
-            Easter Friday April 18th - Quality Hotel Hasle Linie
-        </div>
-    </a>
-</div>
+		{{-partial "header.html"-}}
 		<div id="content">
 			<div class="paragraph">
 
@@ -56,28 +31,7 @@
 			</div>
 
 		</div>
-		<footer>
-    <div class="about">
-        Pawske party © 2023-2025 <br>
-        orgnr: 930 235 490
-    </div>
-
-    <div class="contactUs">
-        contact us at:<br />
-        <a href="mailto:pawskeparty@gmail.com">
-            pawskeparty@gmail.com
-          </a>
-
-          <br>
-          <br>
-          
-          <div class="socialElement">
-            <a href="https://linktr.ee/pawskeparty">
-                Find our socials on Linktree<br>
-            </a>
-        </div>
-    </div>
-</footer>
+		{{-partial "footer.html"-}}
 	</div>
 </body>
 
