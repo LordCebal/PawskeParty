@@ -19,20 +19,16 @@
 }
 
 html {
-  --Cbg: rgb(0, 0, 0);
-  --CHover: rgb(239, 227, 227);
-
-  --CHighlight1: rgb(218, 72, 72);
-  --CHighlight2: rgb(122, 17, 17);
-  --CDetails: rgb(122, 17, 17);
-
-  --Contrast1: rgb(255 185 111);
-
-  --Cp1: rgb(70, 2, 2);
-  --Cp2: rgba(54, 9, 29, 1);
-
-  --Cs1: rgba(162, 43, 13, 20%);
-  --Cs2: rgb(100, 45, 45);
+  --Cp1: #140140; /*Header, footer, paragraph*/
+  --Cp2: #5D2A9B; /*Paragraph every second box*/
+  
+  --CDetails: #140140; /*navback top menu background clour*/
+  --Contrast1: #EB43BC; /*a-href links*/
+  
+  --Cs2: rgb(100, 45, 45); /*Box shadow, currently not in use*/
+  --Cs1: rgba(162, 43, 13, 20%); /*Button background colour*/
+  --CHighlight1: rgb(218, 72, 72); /*button text colour*/
+  --CHighlight2: rgb(122, 17, 17); /*button highlight colour*/
 
   color: white; /*black*/
 
@@ -45,11 +41,10 @@ html {
 body {
   margin: auto;
 
-  background: var(--Cbg);
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.4), 
     rgba(0, 0, 0, 0.4)
-  ),url("../images/backgroundpic2.png");
+  ),url("../images/backgroundpic3.png");
   background-position: top;
   
   max-width: 45em;
