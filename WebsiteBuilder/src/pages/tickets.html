@@ -3,149 +3,151 @@
 {{-partial "head.html"-}}
 
 <body>
-	<div class="app">
-		{{-partial "header.html"-}}
-		<div id="content">
-			<div class="paragraph">
+ <div class="app">
+  {{-partial "header.html"-}}
+  <div id="content">
+   <div class="paragraph">
 
-				<div class="h2">
-					Tickets
-				</div>
+    <div class="h2">
+     Tickets
+    </div>
 
-				<div class="bread">
-					<div class="textblock">
-						TEKSTEN ER UFERDIG HER ER FJORÅRETS TEKST:
-						
-						Tickets cost 350 NOK until March 24th. After that the price increases to 450 NOK.The ticket sales closes at 22:30 on the day of the party, March 29th. 
-					</div>
-					<div class="textblock">
-						Last admissions at 23:00.
-					</div>
-					<div class="textblock">
-						A ticket fee of 30 NOK comes in addition to the ticket price.
-					</div>
-				</div>
-			</div>
-			<div class="paragraph">
-				<div id="checkin_registration" />
-			</div>
+    <div class="bread">
+     <div class="textblock">
+      TEKSTEN ER UFERDIG HER ER FJORÅRETS TEKST:
 
-		</div>
-		{{-partial "footer.html"-}}
-	</div>
+      Tickets cost 350 NOK until March 24th. After that the price increases to 450 NOK.The ticket sales closes at 22:30
+      on the day of the party, March 29th.
+     </div>
+     <div class="textblock">
+      Last admissions at 23:00.
+     </div>
+     <div class="textblock">
+      A ticket fee of 30 NOK comes in addition to the ticket price.
+     </div>
+    </div>
+   </div>
+   <div class="paragraph">
+    <div id="checkin_registration" />
+   </div>
+
+  </div>
+  {{-partial "footer.html"-}}
+ </div>
 </body>
 
 <script>
-	(function (w, d) {
-		d.event_id = 88985;
-		var headTag = d.getElementsByTagName('head')[0];
-		var script = d.createElement('script');
-		script.src = 'https://registration.checkin.no/registration.loader.js';
-		script.async = 1;
-		script.crossOrigin = 1;
-		headTag.appendChild(script);
-	})(window, document);
+ (function (w, d) {
+  d.event_id = 88985;
+  var headTag = d.getElementsByTagName('head')[0];
+  var script = d.createElement('script');
+  script.src = 'https://registration.checkin.no/registration.loader.js';
+  script.async = 1;
+  script.crossOrigin = 1;
+  headTag.appendChild(script);
+ })(window, document);
 
 </script>
 
 <style>
-	/* Makes body transparent */
+ /* Makes body transparent */
 
-	#checkin_registration .registration--body,
-	#checkin_registration .registration--start>.ticket>div,
-	#checkin_registration .registration--start>.ticket>div:last-child,
-	#checkin_registration {
-		background-color: transparent !important;
-	}
+ #checkin_registration .registration--body,
+ #checkin_registration .registration--start>.ticket>div,
+ #checkin_registration .registration--start>.ticket>div:last-child,
+ #checkin_registration {
+  background-color: transparent !important;
+ }
 
-	/* Generelle tekster og titler */
+ /* Generelle tekster og titler */
 
-	#checkin_registration p, 
-	#checkin_registration h1, 
-	#checkin_registration h2, 
-	#checkin_registration h3, 
-	#checkin_registration h4, 
-	#checkin_registration div {
-		color: white !important;
-		font-family: 'louis_george_caferegularRegular' !important;
-		/*  font-size: 18px;  */
-	}
+ #checkin_registration p,
+ #checkin_registration h1,
+ #checkin_registration h2,
+ #checkin_registration h3,
+ #checkin_registration h4,
+ #checkin_registration div {
+  color: white !important;
+  font-family: 'louis_george_caferegularRegular' !important;
+  /*  font-size: 18px;  */
+ }
 
-	/* Next button color*/
-	#checkin_registration button.btn-success {
-		color: white !important;
-		background: transparent !important;
-	}
+ /* Next button color*/
+ #checkin_registration button.btn-success {
+  color: white !important;
+  background: transparent !important;
+ }
 
-	/* Option button color */
-	#checkin_registration button.btn--active {
-		color: white !important;
-		background: transparent !important;
-	}
+ /* Option button color */
+ #checkin_registration button.btn--active {
+  color: white !important;
+  background: transparent !important;
+ }
 
-	/* Modus “Bestill billetter”, “Bestill uspesifisert billetter” */
-	button[name=“activeMode”] {
-		color: white !important;
-		background: transparent !important;
-	}
+ /* Modus “Bestill billetter”, “Bestill uspesifisert billetter” */
+ button[name=“activeMode”] {
+  color: white !important;
+  background: transparent !important;
+ }
 
-	/* Plus button */
-	#checkin_registration .ticket--amount--button.plus {
-		color: white !important;
-		background: transparent !important;
-	}
+ /* Plus button */
+ #checkin_registration .ticket--amount--button.plus {
+  color: white !important;
+  background: transparent !important;
+ }
 
-	/* Minus button */
-	#checkin_registration .ticket--amount--button.minus {
-		color: white !important;
-		background: transparent !important;
-		border: none;
-	}
-	
+ /* Minus button */
+ #checkin_registration .ticket--amount--button.minus {
+  color: white !important;
+  background: transparent !important;
+  border: none;
+ }
 
-	/*Antall billetter*/
-	#checkin_registration .ticket-number-input,
-	.checkin_registration .ticket-number-input {
-		background-color: transparent !important;
-		color: white !important;
-	}
-	/*Endre "Velg biletter" */
-	/*  #choose-tickets span {
+
+ /*Antall billetter*/
+ #checkin_registration .ticket-number-input,
+ .checkin_registration .ticket-number-input {
+  background-color: transparent !important;
+  color: white !important;
+ }
+
+ /*Endre "Velg biletter" */
+ /*  #choose-tickets span {
 		display: none;
 	}
 	#choose-tickets:after {
 		content: "Velg billetter"
 	}  */
 
-	/*Bestillingskontakt*/
-	/*  #ticket-buyer span {
+ /*Bestillingskontakt*/
+ /*  #ticket-buyer span {
 		display: none;
 	}
 	#ticket-buyer:after {
 		content: "Bestillingskontakt"
 	}  */
 
-	/*Deltagerinformasjon*/
-	/*  #attendee-information span {
+ /*Deltagerinformasjon*/
+ /*  #attendee-information span {
 		display: none;
 	}
 	#attendee-information:after {
 		content: "Deltakerinformasjon"
 	}  */
 
-	/* Tillegsvalg for biletten*/
-	/*  #ticket-additionals span {
+ /* Tillegsvalg for biletten*/
+ /*  #ticket-additionals span {
 		display: none;
 	}
 	#ticket-additionals:after {
 		content: «Tilleggsvalg for billetten"
 	}  */
 
-	/*bredden på teksten */
-	#checkin_registration .registration--start>.ticket,
-	.checkin_registration .registration--start>.ticket {
-		flex-wrap: wrap;
-	}
+ /*bredden på teksten */
+ #checkin_registration .registration--start>.ticket,
+ .checkin_registration .registration--start>.ticket {
+  flex-wrap: wrap;
+ }
 </style>
 
 </html>
