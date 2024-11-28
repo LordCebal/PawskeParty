@@ -481,6 +481,9 @@ li {
   max-width: 100%;
 }
 
+#checkin_registration .registration--body,
+#checkin_registration .registration--start>.ticket>div,
+#checkin_registration .registration--start>.ticket>div:last-child,
 #checkin_registration {
   background-color: transparent !important;
 }
