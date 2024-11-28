@@ -484,6 +484,7 @@ li {
 #checkin_registration .registration--body,
 #checkin_registration .registration--start>.ticket>div,
 #checkin_registration .registration--start>.ticket>div:last-child,
-#checkin_registration {
+#checkin_registration,
+#checkin_registration .ch-banner--default, .checkin_registration .ch-banner--default {
   background-color: transparent !important;
 }
