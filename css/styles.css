@@ -19,9 +19,9 @@
 }
 
 html {
-  --Cp1: rgba(20, 1, 64, 80%);
+  --Cp1: rgba(20, 1, 64, 70%);
   /*Header, footer, paragraph*/
-  --Cp2: rgba(93, 42, 155, 80%);
+  --Cp2: rgba(93, 42, 155, 70%);
   /*Paragraph every second box*/
 
   --CDetails: #140140;
@@ -388,7 +388,7 @@ tr {
 }
 
 .videoFrame {
-  height: 30em;
+  height: 20em;
   border-width: 0px;
 }
 
