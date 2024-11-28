@@ -19,18 +19,27 @@
 }
 
 html {
-  --Cp1: #140140; /*Header, footer, paragraph*/
-  --Cp2: #5D2A9B; /*Paragraph every second box*/
-  
-  --CDetails: #140140; /*navback top menu background clour*/
-  --Contrast1: #EB43BC; /*a-href links*/
-  
-  --Cs2: rgb(100, 45, 45); /*Box shadow, currently not in use*/
-  --Cs1: rgba(162, 43, 13, 20%); /*Button background colour*/
-  --CHighlight1: rgb(218, 72, 72); /*button text colour*/
-  --CHighlight2: rgb(122, 17, 17); /*button highlight colour*/
+  --Cp1: rgba(20, 1, 64, 80%);
+  /*Header, footer, paragraph*/
+  --Cp2: rgba(93, 42, 155, 80%);
+  /*Paragraph every second box*/
 
-  color: white; /*black*/
+  --CDetails: #140140;
+  /*navback top menu background clour*/
+  --Contrast1: #EB43BC;
+  /*a-href links*/
+
+  --Cs2: rgb(100, 45, 45);
+  /*Box shadow, currently not in use*/
+  --Cs1: rgba(162, 43, 13, 20%);
+  /*Button background colour*/
+  --CHighlight1: rgb(218, 72, 72);
+  /*button text colour*/
+  --CHighlight2: rgb(122, 17, 17);
+  /*button highlight colour*/
+
+  color: white;
+  /*black*/
 
   margin: 0;
 
@@ -41,12 +50,11 @@ html {
 body {
   margin: auto;
 
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.4), 
-    rgba(0, 0, 0, 0.4)
-  ),url("../images/backgroundpic3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)), url("../images/backgroundpic3.png");
   background-position: top;
-  
+  background-attachment: fixed;
+
   max-width: 45em;
 }
 
@@ -57,6 +65,8 @@ body {
   justify-content: start;
   gap: 1em;
 
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
   min-height: 100vh;
 }
 
@@ -64,23 +74,43 @@ body {
   padding: 0.5em;
   max-width: 90%;
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 0.8em;
 }
 
 .imageGallery {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 0.4em;
   padding: 0.4em 0;
 }
 
-.imageGallery img {
-  border-radius: 0.7em;
-}
-
 a {
   color: var(--Contrast1);
+}
+
+.imageGallery>a {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.imageGallery>a>img {
+  border-radius: 0.7em;
+  aspect-ratio: 1;
+  aspect-ratio: 1.5/1;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+.imageGallery>a:nth-child(3n+1)>img {
+  align-self: center;
+}
+
+.imageGallery>a:nth-child(3n+2)>img {
+  align-self: flex-end;
 }
 
 .intro {
@@ -130,12 +160,13 @@ a {
   border-width: 1px 0px;
 
   flex-grow: 1;
-
   text-align: center;
+
+  min-width: 19%; /*max 4 items per row*/
 
   margin: 1px 0;
   padding: 0.3em;
-  border-radius: 1em;
+  border-radius: 5px;
 }
 
 .navbar a.active {
@@ -212,7 +243,7 @@ footer {
   border-radius: 0.7em 0.7em 0 0;
 }
 
-footer > * {
+footer>* {
   min-width: 10em;
 }
 
@@ -229,7 +260,7 @@ footer a {
   margin-top: 0.4em;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 
@@ -244,7 +275,7 @@ footer a {
   margin: 0;
 }
 
-.paragraph > * {
+.paragraph>* {
   min-width: 7em;
   flex-grow: 1;
 }
@@ -438,7 +469,7 @@ li {
   flex-direction: row;
 } */
 
-.progTable > tbody > tr > td:nth-child(1) {
+.progTable>tbody>tr>td:nth-child(1) {
   text-align: center;
 }
 
@@ -455,5 +486,12 @@ li {
 #checkin_registration .registration--start>.ticket>div:last-child,
 #checkin_registration,
 #checkin_registration .ch-banner--default, .checkin_registration .ch-banner--default {
+  background-color: transparent !important;
+}
+
+#checkin_registration .registration--body,
+#checkin_registration .registration--start>.ticket>div,
+#checkin_registration .registration--start>.ticket>div:last-child,
+#checkin_registration {
   background-color: transparent !important;
 }
