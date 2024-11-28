@@ -162,10 +162,10 @@ a {
   flex-grow: 1;
   text-align: center;
 
-  min-width: 19%; /*max 4 items per row*/
+  min-width: 15%; /*max 4 items per row*/
 
   margin: 1px 0;
-  padding: 0.3em;
+  padding: 0.2em;
   border-radius: 5px;
 }
 
