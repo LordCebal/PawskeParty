@@ -19,6 +19,9 @@
 }
 
 html {
+  --mainFont: white;
+  --weakFont: rgba(255,255,255,0.75);
+
   --Cp1: rgba(20, 1, 64, 70%);
   /*Header, footer, paragraph*/
   --Cp2: rgba(93, 42, 155, 70%);
@@ -38,7 +41,7 @@ html {
   --CHighlight2: rgb(122, 17, 17);
   /*button highlight colour*/
 
-  color: white;
+  color: var(--mainFont);
   /*black*/
 
   margin: 0;
@@ -137,7 +140,7 @@ a {
   text-align: center;
   font-family: "EasterFont";
   font-size: 1.3em;
-  color: white;
+  color:  var(--mainFont);
   border: solid var(--CDetails) 2px;
   border-width: 1px 0px;
 }
@@ -155,7 +158,7 @@ a {
 }
 
 .navbar a {
-  color: white;
+  color:  var(--mainFont);
   border: solid var(--CDetails) 2px;
   border-width: 1px 0px;
 
@@ -170,7 +173,7 @@ a {
 }
 
 .navbar a.active {
-  border: white 2px solid;
+  border: var(--mainFont) 2px solid;
   font-weight: bolder;
 }
 
@@ -182,21 +185,24 @@ a {
   background-color: rgba(0, 0, 0, 35%);
 }
 
-.willowImageBlock {
+.dancingWillowWrapper {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  align-items: center;
 }
 
-.willowImageBlock img {
-  position: absolute;
-  z-index: -1;
+.dancingWillowWrapper > img {
+  max-height: 18em;
+  transform: translateX(-10px)
 }
 
-@media only screen and (max-width: 700px) {
-  .willowImageBlock {
+@media only screen and (max-width: 600px) {
+  .dancingWillowWrapper > img {
     display: none;
   }
 }
+
+
 
 .main {
   display: flex;
@@ -227,7 +233,7 @@ footer {
   font-size: 0.8em;
 
   background-color: var(--Cp1);
-  color: white;
+  color: var(--mainFont);
   font-family: "louis_george_caferegularLight";
 
   width: 96%;
@@ -270,13 +276,13 @@ footer a {
 .subtext {
   background-color: transparent;
   box-shadow: none;
-  color: white;
+  color: var(--mainFont);
   padding: 0;
   margin: 0;
 }
 
-.paragraph>* {
-  min-width: 7em;
+.paragraph > * {
+  /* min-width: 7em; */
   flex-grow: 1;
 }
 
@@ -287,7 +293,7 @@ footer a {
 .h2 {
   font-family: "louis_george_caferegularbold";
   font-size: 2em;
-  color: white;
+  color: var(--mainFont);
   margin: 0 0 0.5em 0;
 }
 
@@ -317,12 +323,12 @@ button {
 
 button:hover {
   background-color: var(--CHighlight2);
-  color: white;
+  color: var(--mainFont);
 }
 
 button:active {
   background-color: var(--CHighlight2);
-  color: white;
+  color: var(--mainFont);
   transform: translateY(3px);
 }
 
@@ -434,7 +440,7 @@ tr {
 }
 
 a.barqLogo {
-  color: white;
+  color: var(--mainFont);
   text-shadow: 1px 1px 1px black;
   font-size: 1.2em;
   font-weight: bolder;
@@ -497,7 +503,7 @@ li {
 
 .memberBox {
   max-height: 10em;
-  width: 47%;
+  flex: 1 1 47%;
 
   display: flex;
   flex-direction: row;
@@ -509,8 +515,9 @@ li {
 }
 
 .memberImg {
-  max-width: 7em;
-  max-height: 7em;
+  object-fit: cover;
+  width: 7em;
+  height: 7em;
 
   border-radius: 2.5em;
 }
@@ -520,6 +527,7 @@ li {
   flex-direction: column;
   gap: 0.5em;
   flex-grow: 1;
+  align-items: baseline;
 }
 
 .memberBox:nth-child(2n)>.memberTextBox {
@@ -531,7 +539,7 @@ li {
 
   font-size: 2em;
 
-  border-bottom: 1.5px white solid;
+  border-bottom: 1.5px var(--mainFont) solid;
 }
 
 .memberTitleLine {
@@ -539,6 +547,17 @@ li {
   font-size: 0.9em;
 }
 
+.telegramHandle::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('../images/svgs/Telegram_logo.svg');
+    background-size: 1.3em 1.3em;
+    height: 1.3em;
+    width: 1.3em;
+}
+
 .telegramHandle {
+  color: var(--weakFont);
   margin-left: 0.5em;
+  word-break: break-all;
 }
