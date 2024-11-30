@@ -481,3 +481,64 @@ li {
   max-width: 100%;
 }
 
+
+.teamGallery {
+  margin-top: 1.5em;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5em;
+}
+
+
+
+.memberBox {
+  max-height: 10em;
+  width: 47%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.memberBox:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.memberImg {
+  max-width: 7em;
+  max-height: 7em;
+
+  border-radius: 2.5em;
+}
+
+.memberTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  flex-grow: 1;
+}
+
+.memberBox:nth-child(2n)>.memberTextBox {
+  align-items: flex-end;
+}
+
+.memberName {
+  max-width: 5em;
+
+  font-size: 2em;
+
+  border-bottom: 1.5px white solid;
+}
+
+.memberTitleLine {
+  margin-left: 0.5em;
+  font-size: 0.9em;
+}
+
+.telegramHandle {
+  margin-left: 0.5em;
+}
