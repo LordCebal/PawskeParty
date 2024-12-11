@@ -158,19 +158,19 @@ a {
 }
 
 .navbar a {
+  margin: 1px 0;
+  padding: 0.2em;
+  border-radius: 5px;
   color: var(--mainFont);
   border: solid var(--CDetails) 2px;
   border-width: 1px 0px;
+  background-color: rgba(0, 0, 0, 35%);
 
   flex-grow: 1;
   text-align: center;
 
-  min-width: 15%;
   /*max 4 items per row*/
-
-  margin: 1px 0;
-  padding: 0.2em;
-  border-radius: 5px;
+  min-width: 15%;
 }
 
 .navbar a.active {
@@ -182,9 +182,9 @@ a {
   text-decoration: none;
 }
 
-.blackTint {
+/* .blackTint {
   background-color: rgba(0, 0, 0, 35%);
-}
+} */
 
 .dancingWillowWrapper {
   display: flex;
@@ -274,6 +274,15 @@ footer a {
   justify-content: space-between;
 }
 
+/* .paragraph:nth-child(2n) {
+  background-color: var(--Cp2);
+} */
+
+div.noBackground {
+  background-color: transparent;
+}
+
+
 .subtext {
   background-color: transparent;
   box-shadow: none;
@@ -285,10 +294,6 @@ footer a {
 .paragraph>* {
   /* min-width: 7em; */
   flex-grow: 1;
-}
-
-.paragraph:nth-child(2n) {
-  background-color: var(--Cp2);
 }
 
 .h2 {
@@ -424,6 +429,7 @@ tr {
 }
 
 .smallsubtitle {
+  background-color: rgba(0, 0, 0, 35%);
   margin-top: 0.3em;
   font-size: 1.4em;
   border-top: none;
@@ -490,7 +496,6 @@ li {
 
 
 .teamGallery {
-  margin-top: 1.5em;
   width: 100%;
 
   display: flex;
@@ -505,14 +510,23 @@ li {
 .memberBox {
   max-height: 10em;
   flex: 1 1 47%;
+  max-width: 55%;
 
   display: flex;
   flex-direction: row;
   gap: 0.5em;
+
+  border-radius: 1.5em;
+  border: solid var(--CDetails) 2px;
+  border-width: 1px 0px;
+  background-color: rgba(0, 0, 0, 35%);
+  padding: 4px;
+  align-items: center;
 }
 
 .memberBox:nth-child(2n) {
   flex-direction: row-reverse;
+  background-color: rgba(255, 255, 255, 25%);
 }
 
 .memberImg {
