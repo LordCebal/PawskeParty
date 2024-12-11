@@ -75,7 +75,7 @@ body {
 
 #content {
   padding: 0.5em;
-  max-width: 90%;
+  max-width: 96%;
   display: flex;
   flex: 1;
   flex-direction: column;
