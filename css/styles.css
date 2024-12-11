@@ -281,7 +281,7 @@ footer a {
   background-color: var(--Cp2);
 }
 
-div.noBackground {
+div.noBackground:nth-child(n) {
   background-color: transparent;
 }
 
