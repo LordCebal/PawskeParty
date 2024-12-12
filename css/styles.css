@@ -552,8 +552,7 @@ li {
 
 .memberTagLine {
   margin-left: 0.5em;
-  font-size: 0.9em;
-  text-decoration: wavy;
+  font-style: italic;
 }
 
 .memberRole {
