@@ -445,13 +445,33 @@ a.barqLogo {
 
 ul {
   padding-inline-start: 0.6em;
-  margin: 0 0 0.6em 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 li {
   padding: 1px 0px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 } 
+
+ul.flexRow {
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+ul.flexRow>li {
+  align-items: center;
+}
+
+.merchImg {
+  max-width: 7em;
+  border-radius: 1em;
+}
 
 .timeslot {
   display: inline-block;
@@ -577,6 +597,10 @@ li {
   display: flex;
 }
 
+.merchImg {
+  max-width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   .dancingWillowWrapper>img {
     display: none;
@@ -586,3 +610,4 @@ li {
     max-width: 100%
   }
 }
+
