@@ -550,9 +550,14 @@ li {
   border-bottom: 1.5px var(--mainFont) solid;
 }
 
-.memberTitleLine {
+.memberTagLine {
   margin-left: 0.5em;
   font-size: 0.9em;
+  text-decoration: wavy;
+}
+
+.memberRole {
+  font-size: 0.7em;
 }
 
 .telegramHandle::before {
