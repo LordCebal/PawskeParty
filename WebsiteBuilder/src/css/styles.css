@@ -179,8 +179,8 @@ a {
   flex-grow: 1;
   text-align: center;
 
-  /*max 4 items per row*/
-  min-width: 15%;
+  /*max 5 items per row*/
+  min-width: 18%;
 }
 
 .navbar a.active {
