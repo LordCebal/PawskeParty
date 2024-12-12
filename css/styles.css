@@ -29,7 +29,7 @@ html {
 
   --CDetails: #140140;
   /*navback top menu background clour*/
-  --Contrast1: #EB43BC;
+  --Contrast1: #eb43bc;
   /*a-href links*/
 
   --Cs2: rgb(100, 45, 45);
@@ -44,6 +44,12 @@ html {
   color: var(--mainFont);
   /*black*/
 
+  /*Animation*/
+  --animation1:#381b7c;
+  --animation2:#75208a;
+  --animation3:#653299;
+  --animation4:#933972;
+
   margin: 0;
 
   font-family: "louis_george_caferegularRegular";
@@ -53,8 +59,8 @@ html {
 body {
   margin: auto;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)), url("../images/backgroundpic3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/backgroundpic3.png");
   background-position: top;
   background-attachment: fixed;
 
@@ -94,13 +100,13 @@ a {
   color: var(--Contrast1);
 }
 
-.imageGallery>a {
+.imageGallery > a {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
-.imageGallery>a>img {
+.imageGallery > a > img {
   border-radius: 0.7em;
   aspect-ratio: 1;
   aspect-ratio: 1.5/1;
@@ -108,11 +114,11 @@ a {
   align-self: flex-start;
 }
 
-.imageGallery>a:nth-child(3n+1)>img {
+.imageGallery > a:nth-child(3n + 1) > img {
   align-self: center;
 }
 
-.imageGallery>a:nth-child(3n+2)>img {
+.imageGallery > a:nth-child(3n + 2) > img {
   align-self: flex-end;
 }
 
@@ -180,12 +186,49 @@ a {
   text-align: center;
 
   /*max 5 items per row*/
-  min-width: 18%;
+  min-width: 21%;
 }
 
 .navbar a.active {
   border: var(--mainFont) 2px solid;
   font-weight: bolder;
+}
+
+
+
+@keyframes rainbowGlow {
+  0% {
+    border-color: var(--animation1);
+    box-shadow: 0 0 6px var(--animation1);
+    text-shadow: 2px 2px 3px var(--animation1);
+  }
+  28% {
+    border-color: var(--animation2);
+    box-shadow: 0 0 10px var(--animation2);
+    text-shadow: 2px 2px 3px  var(--animation2);
+  }
+  57% {
+    border-color: var(--animation3);
+    box-shadow: 0 0 14px var(--animation3);
+    text-shadow: 2px 2px 3px  var(--animation3);
+  }
+  85% {
+    border-color: var(--animation4);
+    box-shadow: 0 0 10px var(--animation4);
+    text-shadow: 2px 2px 3px  var(--animation4);
+  }
+  100% {
+    border-color: var(--animation1);
+    box-shadow: 0 0 6px var(--animation1);
+    text-shadow: 2px 2px 3px  var(--animation1);
+  }
+}
+
+.navbar a.shinyButton {
+  border-width: 1px 0px;
+  border: 2px solid;
+  border-radius: 5px;
+  animation: rainbowGlow 7s infinite;
 }
 
 .noDecoration {
@@ -198,11 +241,10 @@ a {
   align-items: center;
 }
 
-.dancingWillowWrapper>img {
+.dancingWillowWrapper > img {
   max-height: 18em;
-  transform: translateX(-10px)
+  transform: translateX(-10px);
 }
-
 
 .main {
   display: flex;
@@ -249,7 +291,7 @@ footer {
   border-radius: 0.7em 0.7em 0 0;
 }
 
-footer>* {
+footer > * {
   min-width: 10em;
 }
 
@@ -281,7 +323,6 @@ div.noBackground:nth-child(n) {
   background-color: transparent;
 }
 
-
 .subtext {
   background-color: transparent;
   box-shadow: none;
@@ -290,7 +331,7 @@ div.noBackground:nth-child(n) {
   margin: 0;
 }
 
-.paragraph>* {
+.paragraph > * {
   /* min-width: 7em; */
   flex-grow: 1;
 }
@@ -456,7 +497,7 @@ li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-} 
+}
 
 ul.flexRow {
   flex-direction: row;
@@ -464,7 +505,7 @@ ul.flexRow {
   flex-wrap: wrap;
 }
 
-ul.flexRow>li {
+ul.flexRow > li {
   align-items: center;
 }
 
@@ -480,7 +521,6 @@ ul.flexRow>li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 /*Programme*/
 
 /* .progFlexBox {
@@ -493,7 +533,7 @@ ul.flexRow>li {
   flex-direction: row;
 } */
 
-.progTable>tbody>tr>td:nth-child(1) {
+.progTable > tbody > tr > td:nth-child(1) {
   text-align: center;
 }
 
@@ -505,7 +545,6 @@ ul.flexRow>li {
   max-width: 100%;
 }
 
-
 .teamGallery {
   width: 100%;
 
@@ -515,8 +554,6 @@ ul.flexRow>li {
   justify-content: space-around;
   gap: 0.5em;
 }
-
-
 
 .memberBox {
   max-height: 10em;
@@ -557,7 +594,7 @@ ul.flexRow>li {
   align-items: baseline;
 }
 
-.memberBox:nth-child(2n)>.memberTextBox {
+.memberBox:nth-child(2n) > .memberTextBox {
   align-items: flex-end;
   text-align: right;
 }
@@ -581,8 +618,8 @@ ul.flexRow>li {
 
 .telegramHandle::before {
   display: inline-flex;
-  content: '';
-  background-image: url('../images/svgs/Telegram_logo.svg');
+  content: "";
+  background-image: url("../images/svgs/Telegram_logo.svg");
   background-size: 1.3em 1.3em;
   height: 1.3em;
   width: 1.3em;
@@ -602,12 +639,11 @@ ul.flexRow>li {
 }
 
 @media only screen and (max-width: 600px) {
-  .dancingWillowWrapper>img {
+  .dancingWillowWrapper > img {
     display: none;
   }
 
   .memberBox {
-    max-width: 100%
+    max-width: 100%;
   }
 }
-
