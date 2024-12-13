@@ -168,8 +168,8 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5em 2px;
-  font-size: 1.3em;
+  gap: 1px;
+  font-size: 1.1em;
   justify-content: center;
 }
 
@@ -177,16 +177,15 @@ a {
   margin: 1px 0;
   padding: 0.2em;
   border-radius: 5px;
-  color: var(--mainFont);
   border: solid var(--CDetails) 2px;
   border-width: 1px 0px;
   background-color: rgba(0, 0, 0, 35%);
-
-  flex-grow: 1;
+  
+  color: var(--mainFont);
   text-align: center;
 
   /*max 5 items per row*/
-  min-width: 21%;
+  min-width: 19%;
 }
 
 .navbar a.active {
