@@ -652,7 +652,7 @@ body { font: 1em sans-serif;}
 }
 
 .calendarInnerWrapper {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 /* GRID SETUP */
