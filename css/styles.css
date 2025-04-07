@@ -525,6 +525,12 @@ ul.flexRow > li {
   justify-self: flex-start;
 }
 
+.djParty {
+  text-shadow: 2px 2px 3px white;
+  color: var(--animation1);
+  font-weight: bolder;
+}
+
 /*Programme*/
 
 /* .progFlexBox {
@@ -652,7 +658,7 @@ body { font: 1em sans-serif;}
 }
 
 .calendarInnerWrapper {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 /* GRID SETUP */
