@@ -671,7 +671,6 @@ body { font: 1em sans-serif;}
   padding: 1px;
   overflow-x: auto;
 
-  width: 100%;
   height: fit-content;
   min-width: 450px;
 }
@@ -751,7 +750,7 @@ li.event {
 
 .eventTimeslot {
   font-family: "louis_george_caferegularLight";
-  font-size: 0.7em;
+  font-size: 0.9em;
   flex-grow: 0;
 }
 .eventTitle {
@@ -764,8 +763,9 @@ li.event {
 }
 .eventinfo {
   font-family: "louis_george_caferegularLight";
-  font-size: 0.7em;
+  font-size: 0.9em;
   flex-grow: 1;
+  overflow:hidden;
 }
 
 /* DAY HEADINGS   row / col */
