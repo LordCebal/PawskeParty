@@ -750,7 +750,7 @@ li.event {
 
 .eventTimeslot {
   font-family: "louis_george_caferegularLight";
-  font-size: 0.7em;
+  font-size: 0.9em;
   flex-grow: 0;
 }
 .eventTitle {
@@ -763,8 +763,9 @@ li.event {
 }
 .eventinfo {
   font-family: "louis_george_caferegularLight";
-  font-size: 0.7em;
+  font-size: 0.9em;
   flex-grow: 1;
+  overflow:hidden;
 }
 
 /* DAY HEADINGS   row / col */
