@@ -56,6 +56,11 @@ html {
 
   font-family: "louis_george_caferegularRegular";
   font-size: 1em;
+
+  /*Stop overscrolling from showing white background*/
+  background-color: #2e0140;
+  overscroll-behavior:contain ;
+
 }
 
 body {
