@@ -137,6 +137,7 @@ a {
 .logo {
   height: 15em;
   width: 90%;
+  margin: auto;
 
   background-image: url("../images/logotype\ textwhite.png");
   background-size: contain;
